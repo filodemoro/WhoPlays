@@ -12,9 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.CompoundButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private CheckBox checkPlayer;
+    private CheckBox checkTeam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +29,11 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        checkPlayer = (CheckBox) findViewById(R.id.check_player);
+        checkTeam = (CheckBox) findViewById(R.id.check_team);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -67,12 +79,35 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.city) {
             return true;
+        } else if (id == R.id.date) {
+            Toast t = Toast.makeText(this, "per diana" , Toast.LENGTH_LONG);
+            t.show();
+        } else if (id == R.id.check_team) {
+
+                Toast t = Toast.makeText(this, "per diana" , Toast.LENGTH_LONG);
+                t.show();
+
+        } else if (id == R.id.check_player) {
+
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+   /*
+    @Override
+    public void onCheckedChanged(CompoundButton widget, boolean isChecked){
+        switch(widget.getId()){
+            case R.id.check_player:
+                if(isChecked){
+                    = true;
+                }
+        }
+    }
+*/
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -80,13 +115,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.ads) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.calendar) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.settings) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.logout) {
 
         } else if (id == R.id.nav_share) {
 

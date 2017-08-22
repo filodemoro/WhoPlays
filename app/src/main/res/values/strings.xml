@@ -3,6 +3,12 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings"></string>
+    <string name="action_settings">Filter</string>
+    <string name="left_ads">Your ads</string>
+    <string name="left_calendar">My Calendar</string>
+    <string name="left_setting">Settings</string>
+    <string name="filter_team">Team</string>
+    <string name="filter_player">Player</string>
+    <string name="filter_city">City</string>
+    <string name="filter_date">Date</string>
 </resources>
