@@ -4,6 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Filter</string>
+    <string name="my_profile">My Profile</string>
     <string name="left_ads">Your ads</string>
     <string name="left_calendar">My Calendar</string>
     <string name="left_setting">Settings</string>
